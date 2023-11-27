@@ -54,7 +54,13 @@ createApp({
          if(this.conteggio < 0){
             this.conteggio = this.immagini.length-1
          }
-        }
+        },
+        autoplay(){
+          setInterval(this.next,3000); 
+        },
 
+    },
+    mounted(){
+        this.autoplay()
     }
 }).mount('#app')
