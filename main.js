@@ -58,6 +58,10 @@ createApp({
         autoplay(){
           setInterval(this.next,3000); 
         },
+        immagineAttiva(index){
+            this.conteggio = index;
+        }
+
 
     },
     mounted(){

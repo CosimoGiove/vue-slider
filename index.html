@@ -29,8 +29,9 @@
                 <div class="thumbs">
                     <div class="prev" @click="prev"></div>
                     <div class="next" @click="next"></div>
-                    <div v-for="(serie , conteggio) in immagini"
-                     class="thumb active">
+                    <div v-for="(serie , index) in immagini"
+                     class="thumb active"
+                     @click="immagineAttiva(index)">
                         <img
                         :src="serie.img" 
                         :alt="`immagine ${conteggio +1}`" 
